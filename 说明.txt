@@ -1,0 +1,6 @@
+Java 三种代理方法
+	静态代理：目标类和代理类需要实现同一个接口，代理类注入目标类并使用目标类实现方法的功能
+	
+	jdk代理：目标对象一定要实现接口，通过Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces,InvocationHandler h)
+	
+	cglib代理：是针对类来实现代理的，原理是对指定的业务类生成一个子类，并覆盖其中业务方法实现代理。因为采用的是继承，所以不能对final修饰的类进行代理。 
